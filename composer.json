@@ -1,0 +1,48 @@
+{
+    "name": "gowebpro/laravel-mykassa",
+    "description": "MyKassa payments for Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "maksa988",
+            "email": "maksa988ua@gmail.com"
+        },
+        {
+            "name": "Xmk",
+            "email": "i@ars-team.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravel/framework": "7.*",
+        "guzzlehttp/guzzle": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoWebPro\\MyKassa\\Facades\\": "src/Facades",
+            "GoWebPro\\MyKassa\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GoWebPro\\MyKassa\\Test\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GoWebPro\\MyKassa\\MyKassaServiceProvider"
+            ],
+            "aliases": {
+                "MyKassa": "GoWebPro\\MyKassa\\Facades\\MyKassa"
+            }
+        }
+    }
+}

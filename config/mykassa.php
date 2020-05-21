@@ -47,7 +47,7 @@ return [
     /**
      * Skip checked allowed ips
      */
-	'check_ip_skip' => false,
+    'check_ip_skip' => false,
 
     /*
      *  SearchOrder
